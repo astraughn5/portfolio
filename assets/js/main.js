@@ -130,6 +130,9 @@ function getKYUrank(){
 		.then(res => res.json()) // parse response as JSON
 		.then(data => {
 		  console.log(data)
+		  console.log(data.ranks.overall.rank)
+		  document.getElementById('kyuTest').innerHTML += data.ranks.overall.rank
+	
 		})
 		.catch(err => {
 			console.log(`error ${err}`)
