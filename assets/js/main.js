@@ -4,6 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 (function($) {
 
 	var	$window = $(window),
@@ -121,3 +122,17 @@
 				});
 
 })(jQuery);
+
+// Adding KYU rank
+function getKYUrank(){
+  
+	fetch('https://www.codewars.com/api/v1/users/astraughn5')
+		.then(res => res.json()) // parse response as JSON
+		.then(data => {
+		  console.log(data)
+		})
+		.catch(err => {
+			console.log(`error ${err}`)
+		});
+  }
+  getKYUrank()
