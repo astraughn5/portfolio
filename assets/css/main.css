@@ -1743,11 +1743,14 @@ input, select, textarea {
 		}
 
 /* Image */
-	div .bobImage{
-		width: 25%;
+	div .personalImage{
+		width: 70%;
 		display: block;
-		border-radius: 50%; 
-		margin: 0 auto .5em auto;
+		border-radius: 25%; 
+		margin: 0 auto .5em auto;		
+	}
+	div .personalImage:hover{
+		transform: skew(-2deg);
 	}
 
 	.image {
@@ -2255,7 +2258,6 @@ input, select, textarea {
 			#main > section.one {
 				background-color: #81918E;
 				background-image: url(../../images/main_stock_cover.jpg);
-				/* background-image: url("../../images/banner.jpg"); */
 			}
 
 			#main > section.two {
